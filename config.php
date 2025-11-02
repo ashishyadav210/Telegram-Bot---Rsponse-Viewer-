@@ -5,8 +5,8 @@
  */
 
 // Bot Configuration
-define('BOT_TOKEN', '8190286562:AAHlS3diTjJ6kluTk5JAS7dpfwWgRuDxMt4'); // Get this from @BotFather
-define('ADMIN_TELEGRAM_ID', '6481253895');   // Admin telegram ID
+define('BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE'); // Get this from @BotFather
+define('ADMIN_TELEGRAM_ID', 'YOUR_ADMIN_TELEGRAM_ID_HERE');   // Admin telegram ID
 
 // Build API URL
 define('TELEGRAM_API_URL', 'https://api.telegram.org/bot' . BOT_TOKEN);
