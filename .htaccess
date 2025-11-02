@@ -1,0 +1,51 @@
+# Telegram Guild Bot - Apache Configuration
+
+# Prevent access to sensitive files
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "database.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Prevent access to data directory
+<DirectoryMatch "^.*/data/*">
+    Order allow,deny
+    Deny from all
+</DirectoryMatch>
+
+# Prevent access to logs directory
+<DirectoryMatch "^.*/logs/*">
+    Order allow,deny
+    Deny from all
+</DirectoryMatch>
+
+# Clean URLs (optional)
+RewriteEngine On
+
+# Error pages
+ErrorDocument 403 "Access Denied"
+ErrorDocument 404 "File Not Found"
+
+# Security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set proper MIME type for JSON files
+<IfModule mod_mime.c>
+    AddType application/json .json
+</IfModule>
