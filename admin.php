@@ -8,7 +8,7 @@ require_once 'config.php';
 require_once 'database.php';
 
 // Simple authentication (change this password!)
-$adminPassword = 'Naresh'; // CHANGE THIS!
+$adminPassword = 'admin'; // CHANGE PASSWORD!
 
 session_start();
 
