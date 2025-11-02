@@ -7,7 +7,7 @@
 require_once 'config.php';
 
 // Check if bot token is set
-if (BOT_TOKEN === '8190286562:AAHlS3diTjJ6kluTk5JAS7dpfwWgRuDxMt4') {
+if (BOT_TOKEN === 'YOUR_BOT_TOKEN_HERE') {
     die("❌ Please set your bot token in config.php first!\n");
 }
 
