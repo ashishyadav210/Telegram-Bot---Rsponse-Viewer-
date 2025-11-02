@@ -55,4 +55,4 @@ This is a simple yet powerful Telegram bot script written in PHP. Its primary fu
 *   `setup.php`: वेबहुक सेट करने के लिए स्क्रिप्ट।
 *   `database.php`: फ़ाइल-आधारित डेटा को मैनेज करने के लिए क्लास।
 *   `/data/` & `/logs/`: ये डायरेक्टरी यूज़र डेटा और लॉग्स को स्टोर करने के लिए अपने आप बन जाती हैं।
-*   
+  
